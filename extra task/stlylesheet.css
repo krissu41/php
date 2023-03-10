@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    border: 2px solid black;
+    background-color: rgb(96, 16, 170);
+    margin: 20px auto;
+    max-width: 500px;
+    padding: 30px;
+}
+.container input {
+display: flex;
+width: 60%;
+width: 100%;
+padding-bottom: 20px;
+margin-bottom: 30px;
+}
+.container textarea{
+   display: flex;
+    width: 60%;
+    width: 100%;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+.submit{
+    width: 60%;
+    width: 50%;
+    align-items: center;
+    padding-bottom: 5px;
+    margin:4PX;
+}
+h1{
+    text-align: center;
+}
+.checked {
+    color: orange;
+    
+  }

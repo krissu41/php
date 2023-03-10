@@ -1,0 +1,50 @@
+ 
+Select First_Name AS Employee_Name From employee;
+a) Get First_Name from employee table using alias name “Employee Name”.
+b) Get FIRST_NAME, Joining year, Joining Month and Joining Date from employee 
+table.
+
+
+c) Get all employee details from the employee table order by First Name Ascending 
+And Salary descending?
+SELECT * FROM employee
+ORDER BY First_Name ASC, Salary DESC; 
+d) Get employee details from employee table whose first name contains „o‟.
+SELECT * FROM  employee
+ SELECT * FROM  employee WHERE First_name LIKE "%o%";
+e) Get employee details from employee table whose joining month is “January”. 
+
+f) Get department, total salary with respect to a department from employee table 
+Order By total salary descending. 
+SELECT Department,MAX(Salary) MAXSALARY FROM employee GROUP BY Department ORDER BY MAXSALARY ASC;
+
+g) Get department wise maximum salary from employee table order by salary 
+ascending? 
+h) Select first_name, incentive amount from employee and incentives table for those 
+Employees who have incentives and incentive amount greater than 3000 
+i) Select 2nd Highest salary from employee table. 
+j) Sirst_name, incentive amount from employee and incentives table for all 
+Employees who gelect fot incentives using left join. 
+k) Create View OF Employee table in which store first name, last name and salary 
+only. 
+l) Create Procedure to find out department wise highest salary. 
+m) 
+Create after Insert trigger on Employee table which insert records in view table. 
+
+
+
+
+
+
+
+
+TASK2
+SALES_PERSON
+CREATE TABLE SALES_PERSON(SNO INT PRIMARY KEY AUTO_INCREMENT,SNAME VARCHR(255), CITY VARCHAR(255),COMM FLOAT);
+CUSTOMER
+
+CREATE TABLE CUSTOMER(CNM INT PRIMARY KEY AUTO_INCREMENT, CNAME VARCHAR(255), CITY VARCHAR(255), SNO INT,FOREIGN KEY(SNO) REFERENCES sales_person(SNO));
+
+
+ORDER1
+CREATE TABLE ORDER1(ONM INT PRIMARY KEY AUTO_INCREMENT, AMT FLOAT VARCHAR(255), CITY VARCHAR(255), SNO INT,FOREIGN KEY(SNO) REFERENCES sales_person(SNO));

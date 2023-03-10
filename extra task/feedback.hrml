@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body {
+		  background-color:brown;
+		  color:white;
+		  border-color:white;
+		  
+		}
+		.btn{
+            display: inline-block;
+            background-color:pink;
+            color: red;
+            margin-left: 50%;
+            margin-top:5%;
+		}
+		</style>
+	<title>USER FORM</title>
+</head>
+
+<body>
+	<fieldset><div class="form">
+		<DIV class="container">
+			<form action="">
+				<h2>USER DETAILS</h2>
+				<fieldset><P>FRIST NAME:<input type="text" name="fristname" placeholder="Enter YourName" required></P></fieldset>
+				<fieldset><P>LAST NAME:<input type="text" name="lastname" placeholder="EXMPLE@GMAIL.COM" required></P></fieldset>
+				<fieldset><p>YOUR PHONE:<input type="number" name="phone" placeholder="ENTER YOURPHONE" required></p></fieldset>
+				<fieldset><P>YOUR MESSAGE:<textarea name="msg" name="msg" placeholder="Enter your address" requiredplaceholder="enter youraddress"></textarea></P></fieldset>
+				<fieldset><P>YOUR RATING:<input type="number" name="postcode" placeholder="1234" required></P></fieldset>
+			    <input type="submit" value="buy it" class="btn"> 
+			</FORM>
+		</div>
+	</div>
+</fieldset>
+</body>
+
+</html>
